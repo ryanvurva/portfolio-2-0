@@ -1,12 +1,30 @@
 $base-text-size: 16px;
 $base-font-family: sans-serif;
 
-// Remove the browsers built-in styling for lists elements.
-@mixin reset-list {
-  padding-left: 0;
+$background:  rgb(0, 0, 10);
+$mainGrey: #272827;
+$fadedGrey: hsla(120, 1%, 15%, 0.9);
+$fadedGrey2: hsla(120, 1%, 15%, 0.5);
+$newBlue: hsla(226, 33%, 48%, 0.8);
+$fullWidth: 100vw;
+$fullHeight: 100%;
+$white: #fff;
+$slider: 800px;
 
-  li {
-    list-style: none;
+@mixin animate {
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 800ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  @keyframes fadein {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
   }
 }
 

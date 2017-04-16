@@ -1,7 +1,20 @@
 @import 'utility';
+@import 'hello';
+@import 'hellobutton';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
-$base-text-size: 16px;
-$base-font-family: sans-serif;
+.wallpaper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-around;
+}
 
 html {
   @include full-height;
@@ -9,5 +22,310 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   font: $base-text-size / 1 $base-font-family;
+  background-image: url('../images/ryan.jpg');
+  @extend .wallpaper;
+  // overflow: hidden;
+}
+
+header {
+    width: $fullWidth;
+    // height: $slider;
+    height: 800px;
+    @extend .flex-space;
+    margin: 0;
+
+    .profile {
+      @include animate;
+    }
+}
+
+.slide-1 {
+  width: $fullWidth;
+  // height: 800px;
+  // background-color: $fadedGrey;
+  background-image: url('../images/grandcanyon2.jpg');
+  @extend .wallpaper;
+  // opacity: 0.8;
+  padding-bottom: 30px;
+  font-family: 'Roboto Mono', monospace;
+
+  .slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills {
+      color: $white;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto 0 auto;
+      padding: 30px 5px 20px 5px;
+  }
+
+  .skills-pics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white;
+    border-radius: 45px;
+    opacity: 0.8;
+    width: 90vw;
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    padding: 20px;
+  }
+
+  .wordpress-logo {
+      background-color: $white;
+      border-radius: 45px;
+      opacity: 0.8;
+      width: 90vw;
+      max-width: 600px;
+      margin: 40px auto 0 auto;
+      padding: 15px;
+  }
+
+  .react-logo {
+      background-color: $white;
+      border-radius: 45px;
+      opacity: 0.8;
+      width: 90vw;
+      max-width: 600px;
+      margin: 40px auto 0 auto;
+      padding: 15px;
+  }
+
+  .sass-logo {
+      background-color: $white;
+      border-radius: 45px;
+      opacity: 0.8;
+      width: 90vw;
+      max-width: 600px;
+      margin: 40px auto 30px auto;
+      padding: 15px;
+  }
+}
+
+.repos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 50px;
+  // height: 800px;
+  // background-image: url('../images/grandcanyon2.jpg');
+  background-color: $fadedGrey;
+  // @extend .wallpaper;
+  // @extend .flex-space;
+  font-family: 'Roboto Mono', monospace;
+
+  h2 {
+    width: 300px;
+    color: #000;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+      color: $mainGrey;
+    }
+  }
+
+  .repo-menu {
+    height: 300px
+  }
+
+  ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:300px;
+    box-shadow:0 0 3px rgba(100,100,100,.9),
+               0 0 0 5px rgba(100,100,100,.3);
+    border-radius:5px;
+    margin:20px;
+  }
+  ul li{
+    text-decoration: none;
+    display:block;
+    height:20px;
+    background:$mainGrey;
+    padding:10px;
+    color:white;
+    border-top:1px solid rgba(255,255,255,.1);
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  ul li:hover{
+    background:rgba(22, 160, 133,0.8);
+  }
+  ul li:last-child{
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+  }
+  label:before{
+    height:2px;
+    width:20px;
+    background:white;
+    display:inline-block;
+    content:"";
+    box-shadow:0px -5px 0px 0px  white,
+               0px -10px 0px 0px white;
+    margin-right:10px;
+    transition:all .5s;
+    position:relative;
+    opacity:0.5;
+  }
+  label{
+    display:block;
+    background:$mainGrey;
+    padding:10px;
+    color:white;
+    cursor:pointer;
+  }
+  input[type="checkbox"]{
+    visibility:hidden;
+    position:absolute;
+  }
+  #collapse:checked ~ li{
+    display:none;
+    margin-top:0;
+  }
+  #collapse:checked + label:before{
+    position:relative;
+    right:calc(-260px);
+    opacity:1;
+
+  }
+}
+
+.slide-2 {
+  // width: 100%;
+  width: 17em;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  // background-color: $fadedGrey;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  .menu {
+  .menu-content {
+    background-color: $fadedGrey2;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    float: left;
+    width: 15em;
+    height: 100vh;
+    h2 {
+      font-family: 'Roboto Mono', monospace;
+      font-weight: normal;
+      margin-left: 1em;
+      color: rgba(252,251,250,0.5);
+    }
+    ul {
+      list-style: none;
+    }
+  }
+  li, label  {
+    color: rgba(252,251,250,0.5);
+    cursor: pointer;
+    -webkit-transition-duration: 1.0s;
+    -moz-transition-duration: 1.0s;
+    -ms-transition-duration: 1.0s;
+    -o-transition-duration: 1.0s;
+    transition-duration: 1.0s;
+    &:hover {
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      color: rgba(252,251,250,0.9);
+    }
+  }
+  .menu-switch {
+    padding-top: 3em;
+    label {
+      font-size: 3em;
+      // font-family: 'Open Sans Condensed', sans-serif;
+      font-family: 'Roboto Mono', monospace;
+    }
+  }
+  input {
+    display: none;
+  }
+
+  .collapse, .rise {
+    animation: float 3s ease-in-out infinite;
+  }
+  #menu-collapsed{
+    &:checked{
+      ~ .menu-content {
+        margin-left: -15em;
+      }
+      ~ .menu-switch .rise {
+        display:block;
+      }
+      ~ .menu-switch .collapse {
+        display:none;
+      }
+    }
+    ~ .menu-switch .rise {
+      display:none;
+    }
+  }
+}
+}
+
+@keyframes float {
+	0% {
+		// box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		// box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-10px);
+	}
+	100% {
+		// box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-position: left -200px top 0px;
+        padding: 0;
+    }
+
+    .hello {
+      margin: 10px 10px 0 0;
+      opacity: 0.7;
+      // width: 20vw;
+      padding: 5px 25px 10px 25px;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
 }
