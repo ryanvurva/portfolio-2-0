@@ -8,6 +8,7 @@
     max-width: 500px;
     // animation: float 6s ease-in-out infinite;
     animation: flickr 3s linear 2;
+    animation-fill-mode: forwards;
 
     &::after {
       content: url('../images/tri.png');
@@ -25,6 +26,6 @@
     25%   { opacity: .3; }
     45%   { opacity: .6; }
     60%   { opacity: .4; }
-    70%,100%   { opacity: 1; }
+    70%,100%   { opacity: .9; }
   }
 }
