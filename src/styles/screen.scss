@@ -68,9 +68,9 @@ header {
   }
 
   .code-logo {
-      background-color: $white;
+      background-color: hsla(240, 3%, 93%, 0.8);
       border-radius: 45px;
-      opacity: 0.8;
+      // opacity: 0.8;
       width: 90vw;
       max-width: 600px;
       margin: 40px auto 0 auto;
@@ -78,9 +78,9 @@ header {
   }
 
   .wordpress-logo {
-      background-color: $white;
+      background-color: hsla(240, 3%, 93%, 0.8);
       border-radius: 45px;
-      opacity: 0.8;
+      // opacity: 0.8;
       width: 90vw;
       max-width: 600px;
       margin: 40px auto 0 auto;
@@ -88,9 +88,9 @@ header {
   }
 
   .react-logo {
-      background-color: $white;
+      background-color: hsla(240, 3%, 93%, 0.8);
       border-radius: 45px;
-      opacity: 0.8;
+      // opacity: 0.8;
       width: 90vw;
       max-width: 600px;
       margin: 40px auto 0 auto;
@@ -98,9 +98,9 @@ header {
   }
 
   .sass-logo {
-      background-color: $white;
+      background-color: hsla(240, 3%, 93%, 0.8);
       border-radius: 45px;
-      opacity: 0.8;
+      // opacity: 0.8;
       width: 90vw;
       max-width: 600px;
       margin: 40px auto 30px auto;
@@ -122,30 +122,30 @@ header {
   z-index: 2;
 
   .menu {
-  .menu-content {
-    background-color: hsl(90, 0%, 43%);
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -ms-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    float: left;
-    width: 15em;
-    height: 100vh;
-    h2 {
-      font-family: 'Roboto Mono', monospace;
-      font-weight: normal;
-      margin-left: 1em;
-      color: rgba(252,251,250,0.5);
-    }
-    ul {
-      list-style: none;
-
-      a {
-        text-decoration: none;
+    .menu-content {
+      background-color: hsl(90, 0%, 43%);
+      -webkit-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+      -ms-transition-duration: 1s;
+      -o-transition-duration: 1s;
+      transition-duration: 1s;
+      float: left;
+      width: 15em;
+      height: 100vh;
+      h2 {
+        font-family: 'Roboto Mono', monospace;
+        font-weight: normal;
+        margin-left: 1em;
         color: rgba(252,251,250,0.5);
       }
-    }
+      ul {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: rgba(252,251,250,0.5);
+        }
+      }
   }
   .gitHubTitle {
     padding-top: 30px;
@@ -173,6 +173,9 @@ header {
       color: rgba(252,251,250,0.9);
     }
   }
+  .label {
+    text-shadow: 3px 1px 2px black;
+  }
   .gitHub {
     margin-left: -10px;
 
@@ -193,7 +196,6 @@ header {
     padding-top: 3em;
     label {
       font-size: 3em;
-      // font-family: 'Open Sans Condensed', sans-serif;
       font-family: 'Roboto Mono', monospace;
     }
   }
@@ -220,7 +222,6 @@ header {
       display:none;
     }
   }
-}
 }
 
 @keyframes float {
@@ -255,4 +256,5 @@ header {
         margin-bottom: 0;
       }
     }
+  }
 }

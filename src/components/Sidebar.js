@@ -8,7 +8,7 @@ class Repos extends Component {
   render () {
     return <div className='side-bar'>
       <div className='menu'>
-        <input type='checkbox' id='menu-collapsed' name='menu-collapsed' />
+        <input type='checkbox' id='menu-collapsed' name='menu-collapsed' defaultChecked />
         <div className='menu-content'>
           <h2 className='gitHubTitle'>GitHub Repos</h2>
           <ul className='gitHub'>
@@ -19,10 +19,10 @@ class Repos extends Component {
           </ul>
           <h2 className='socialMediaTitle'>Connect To Me</h2>
           <ul className='socialMedia'>
-            <li><a href='https://github.com/ryanvurva'><i className='fa fa-github-square' /></a></li>
-            <li><a href='https://www.facebook.com/ryan.vurva'><i className='fa fa-facebook-square' /></a></li>
-            <li><a href='https://twitter.com/theeffinvurv'><i className='fa fa-twitter-square' /></a></li>
-            <li><a href='https://www.linkedin.com/in/ryan-vurva-0993bb13b/'><i className='fa fa-linkedin-square' /></a></li>
+            <li><a href='https://github.com/ryanvurva'><i className='fa fa-github-square jiggle' /></a></li>
+            <li><a href='https://www.facebook.com/ryan.vurva'><i className='fa fa-facebook-square jiggle' /></a></li>
+            <li><a href='https://twitter.com/theeffinvurv'><i className='fa fa-twitter-square jiggle' /></a></li>
+            <li><a href='https://www.linkedin.com/in/ryan-vurva-0993bb13b/'><i className='fa fa-linkedin-square jiggle' /></a></li>
           </ul>
         </div>
         <div className='menu-switch'>

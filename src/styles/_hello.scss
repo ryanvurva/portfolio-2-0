@@ -6,9 +6,6 @@
     margin: 60px 10px 10px 0px;
     justify-content: center;
     max-width: 500px;
-    // animation: float 6s ease-in-out infinite;
-    animation: flickr 3s linear 2;
-    animation-fill-mode: forwards;
 
     &::after {
       content: url('../images/tri.png');
@@ -17,15 +14,4 @@
       left: 0px;
       opacity: 0.9;
     }
-
-    @-webkit-keyframes flickr {
-    0% { opacity: .3;    }
-    10%   { opacity: .7; }
-    15%   { opacity: .5; }
-    20%   { opacity: .9; }
-    25%   { opacity: .3; }
-    45%   { opacity: .6; }
-    60%   { opacity: .4; }
-    70%,100%   { opacity: .9; }
-  }
 }

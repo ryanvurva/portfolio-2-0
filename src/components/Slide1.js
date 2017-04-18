@@ -8,18 +8,18 @@ class Slide1 extends Component {
   render () {
     return <div className='slide-1'>
       <div className='skills'>
-        <h2>Skills I'm Passionate About':</h2>
+        <h2>Skills I'm Passionate About:</h2>
       </div>
-      <div className='code-logo'>
+      <div className='code-logo wow slideInLeft'>
         <img src={CodeLogo} alt='html 5 css 3 javascript' width='100%' />
       </div>
-      <div className='wordpress-logo'>
+      <div className='wordpress-logo wow slideInRight'>
         <img src={WordpressLogo} alt='wordpress' width='100%' />
       </div>
-      <div className='react-logo'>
+      <div className='react-logo wow slideInLeft'>
         <img src={ReactLogo} alt='wordpress' width='100%' />
       </div>
-      <div className='sass-logo'>
+      <div className='sass-logo wow slideInRight'>
         <img src={SassLogo} alt='wordpress' width='100%' />
       </div>
     </div>

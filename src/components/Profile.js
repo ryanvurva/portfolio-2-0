@@ -4,8 +4,8 @@ import React, { Component } from 'react'
 class Profile extends Component {
   render () {
     return <header>
-      <div className='wow slideOutRight profile'>
-        <div className='wow slideOutRight'>
+      <div className='profile wow slideOutRight'>
+        <div>
           <div className='hello'>
             <h1>Hi, I'm {this.props.name}</h1>
             <p>{this.props.bio} in the {this.props.location}.</p>
